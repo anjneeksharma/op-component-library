@@ -1,1 +1,0 @@
-export const sayHello = (name) => `Hello world, My name is ${name}`;
