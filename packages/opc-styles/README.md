@@ -12,7 +12,7 @@ started with any component which includes global variables, colors, common mixin
 Import the opc-style.scss into your style file 
 
 ```
-  @import "/opc-styles.scss";
+  @import "@one-platform/opc-styles";
 
 ```
 
@@ -49,6 +49,24 @@ opc-button.scss
     border-color: transparent; 
   }
   
+```
+
+#### Adding the Headings style to the component
+Use the mixin which are defined in the headings.scss file e.g.
+
+```
+  .app-heading {
+    @include heading--three
+  }
+```
+this will convert to the css
+
+```
+  .app-heading {
+    font-family: var(--opc-global--Heading--font-Family, "Red Hat Display");
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
 ```
 
 ## 🤝 Contributors
